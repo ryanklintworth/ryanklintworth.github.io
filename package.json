@@ -1,0 +1,13 @@
+{
+  "dependencies": {
+    "npm": "^9.5.1"
+  },
+  "devDependencies": {
+    "concurrently": "^7.6.0",
+    "http-server": "^14.1.1"
+  },
+  "scripts": {
+    "start": "npm run open",
+    "open": "concurrently \"http-server -a localhost -p 1234\" \"open http://localhost:1234/build\""
+ }
+}
